@@ -1,0 +1,82 @@
+#content.loader {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  animation: pageTransitionTopBottom 1.25s ease-out;
+}
+
+#heroTitleFirst {
+  animation: moveTextIn 0.25s ease-in;
+}
+
+#heroTitleSecond {
+  animation: moveTextIn 0.5s ease-in;
+}
+
+#heroTitleThird {
+  animation: moveTextIn 0.75s ease-in;
+}
+
+#callToActionButton {
+  animation: fadeIn 1s linear;
+}
+
+#heroImage {
+  animation: fadeIn 1s linear;
+}
+
+@keyframes moveTextIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pageTransitionTopBottom {
+  10% {
+    transform: scale(1, 0.002);
+  }
+
+  35% {
+    transform: scale(0.2, 0.002);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.2, 0.002);
+    opacity: 0;
+  }
+
+  85% {
+    transform: scale(1, 0.002);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}

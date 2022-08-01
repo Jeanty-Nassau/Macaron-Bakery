@@ -1,0 +1,68 @@
+#menuSection{
+  margin-top: 5vw;
+  padding: 10vw 5vw;
+  height: 55vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #D2DEBD;
+}
+#menuSquare{
+  position: relative;
+  border: 1px solid #D2DEBD;
+  height: 100%;
+  width: 100%;
+  margin: 0 10vw;
+  display: flex;
+  align-items: center;
+}
+#menuTitle{
+  position: absolute;
+  font-size: 14rem;
+  font-weight: 700;
+  line-height: 14vw;
+  left: -10vw;
+  top: 0;
+  bottom: 0;
+  color: #FEEFC6;
+  margin: auto 0;
+}
+#menuImage{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background-image: url(../images/macaron_cream.png);
+  background-position: center;
+  background-size: cover;
+  width: 20vw;
+  height: 15vw;
+}
+#menuGrid{
+  position: absolute;
+  right: -8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.menuGridItem{
+  cursor: pointer;
+  margin: 8px 0;
+}
+.menuGridItem:hover>div{
+  width: 100%;
+}
+.menuGridItem>h1{
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+.menuGridItem>div{
+  height: 2px;
+  width: 0;
+  background-color: #D2DEBD;
+  transition: width 300ms ease-out;
+}

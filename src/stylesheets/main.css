@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#loaderContainer {
+  background-color: #D2DEBD;
+}
+
+#content {
+  background-color: white;
+}
+
+nav {
+  z-index: 50;
+  height: 5vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw 0 5vw;
+  border-bottom: 1px solid #D2DEBD;
+  background-color: white;
+}
+
+#navLeft {
+  cursor: pointer;
+}
+
+#navLeft>h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+#navRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20vw;
+}
+
+#menuItem {
+  cursor: pointer;
+}
+
+#menuItem:hover>div {
+  width: 100%;
+}
+
+#menuItem>h1 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+#menuItem>div {
+  height: 2px;
+  width: 0;
+  background-color: #D2DEBD;
+  transition: width 300ms ease-out;
+}
+
+#aboutItem {
+  cursor: pointer;
+}
+
+#aboutItem:hover>div {
+  width: 100%;
+}
+
+#aboutItem>h1 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+#aboutItem>div {
+  height: 2px;
+  width: 0;
+  background-color: #D2DEBD;
+  transition: width 300ms ease-out;
+}
+
+#contactItem {
+  cursor: pointer;
+}
+
+#contactItem:hover>div {
+  width: 100%;
+}
+
+#contactItem>h1 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+#contactItem>div {
+  height: 2px;
+  width: 0;
+  background-color: #D2DEBD;
+  transition: width 300ms ease-out;
+}
+
+.activeItem>div {
+  width: 100% !important;
+}
+
+#heroSection {
+  margin-top: 5vw;
+  padding: 0 5vw 0 5vw;
+  height: 95vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #D2DEBD;
+}
+
+#heroSquare {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 10vw 0 10vw;
+  border-left: 1px solid #D2DEBD;
+  border-right: 1px solid #D2DEBD;
+
+}
+
+#heroImage {
+  position: absolute;
+  background-image: url(../images/heather-barnes-xRP85nsGWGo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 25vw;
+  height: 40vw;
+  left: -10vw;
+  bottom: 8vw;
+  border: 1px solid #D2DEBD;
+}
+
+#heroTitle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -15vw;
+  margin: auto;
+  height: 50%;
+  width: 52vw;
+}
+
+#heroTitle>h1 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+#callToActionButton {
+  position: absolute;
+  z-index: 10;
+  font-size: 1.25rem;
+  padding: 1.25vw 5vw;
+  border: 1px solid #D2DEBD;
+  border-radius: 2vw;
+  background-color: white;
+  right: -10vw;
+  bottom: 8vw;
+  transition: all 300ms ease-out;
+}
+
+#callToActionButton:hover {
+  background-color: #D2DEBD;
+  cursor: pointer;
+  scale: 1.1;
+}
+
+#aboutSection {
+  height: 60vh;
+  border-bottom: 1px solid #D2DEBD;
+  padding: 8vw 5vw;
+}
+
+#aboutSquare {
+  position: relative;
+  border: 1px solid #D2DEBD;
+  height: 100%;
+  margin: 0 10vw;
+  display: flex;
+  align-items: center;
+}
+
+#aboutText {
+  position: absolute;
+  left: -10vw;
+  width: 70%;
+}
+
+#aboutText>h1 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+#aboutText>h3 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+#aboutText>p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#aboutImage {
+  position: absolute;
+  background-image: url(../images/heather-barnes-l9Ugo0XcGWw-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 20vw;
+  height: 25vw;
+  right: -10vw;
+}
+
+#chefSection {
+  padding: 0 5vw 0 5vw;
+  height: 90vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #D2DEBD;
+}
+
+#chefSquare {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 10vw 0 10vw;
+  border-left: 1px solid #D2DEBD;
+  border-right: 1px solid #D2DEBD;
+}
+
+#chefText {
+  position: absolute;
+  left: -10vw;
+  width: 70%;
+  top: 8vw;
+}
+
+#chefText>h1 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+#chefText>p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#chefImage1 {
+  position: absolute;
+  background-image: url(../images/rc-cf-FMh5o5m5N9E-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 20vw;
+  height: 25vw;
+  right: 5vw;
+  top: 8vw;
+  z-index: 1;
+  border: 1px solid #D2DEBD;
+}
+
+#chefImage2 {
+  position: absolute;
+  background-image: url(../images/rc-cf-rJWet3rYVWM-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 20vw;
+  height: 25vw;
+  right: -10vw;
+  bottom: 8vw;
+  border: 1px solid #D2DEBD;
+}
+
+#contactSection {
+  position: relative;
+  padding: 5vw 5vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #D2DEBD;
+}
+
+#contactSquare {
+  position: relative;
+  border: 1px solid #D2DEBD;
+  height: 100%;
+  margin: 0 10vw;
+  display: flex;
+  align-items: center;
+}
+
+#contactSquare>div {
+  width: 90%;
+  position: absolute;
+  left: -10vw;
+}
+
+#contactSquare>div>h1 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  margin-bottom: 1vw;
+  margin-top: 0;
+}
+
+#contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
